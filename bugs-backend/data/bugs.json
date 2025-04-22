@@ -1,0 +1,20 @@
+[
+    {
+        "_id": "8BPo6a",
+        "title": "New bug",
+        "severity": 3,
+        "description": "Test bug",
+        "createdAt": 1745311911057
+    },
+    {
+        "_id": "AY3QIA",
+        "title": "saved",
+        "severity": 4,
+        "createdAt": 1745150524018
+    },
+    {
+        "_id": "8q4PP9",
+        "severity": null,
+        "createdAt": 1745147929586
+    }
+]
