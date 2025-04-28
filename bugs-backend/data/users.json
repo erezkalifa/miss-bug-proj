@@ -19,5 +19,18 @@
     "username": "tuki",
     "password": "tuki1234",
     "score": 27
+  },
+  {
+    "fullname": "erez",
+    "username": "admin",
+    "password": "123",
+    "score": 15,
+    "_id": "yoaQ8N"
+  },
+  {
+    "fullname": "erez",
+    "username": "admin",
+    "score": 15,
+    "_id": "8wH8nZ"
   }
 ]

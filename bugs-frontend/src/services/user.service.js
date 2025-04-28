@@ -10,7 +10,6 @@ export const userService = {
   getById,
   save,
   remove,
-  getDefaultFilter,
 };
 
 async function query() {
@@ -39,12 +38,12 @@ function remove(userId) {
 }
 
 async function save(user) {
-  const method = car._id ? "put" : "post";
+  const method = user._id ? "put" : "post";
 
   try {
     const { data: savedUser } = await axios[method](
       BASE_URL + (user._id || ""),
-      car
+      user
     );
     return savedUser;
   } catch (err) {

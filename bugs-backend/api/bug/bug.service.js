@@ -1,4 +1,4 @@
-import { readJsonFile, writeJsonFile, makeId } from "./utils.js";
+import { readJsonFile, writeJsonFile, makeId } from "../../services/utils.js";
 
 export const bugService = {
   query,
@@ -11,6 +11,7 @@ const bugs = readJsonFile("./data/bugs.json");
 
 async function query(filterBy) {
   let bugsToDisplay = bugs;
+
   try {
     if (filterBy.txt) {
       const regExp = new RegExp(filterBy.txt, "i");
@@ -18,8 +19,30 @@ async function query(filterBy) {
     }
 
     if (filterBy.severity) {
-      bugsToDisplay = bugs.filter((bug) => bug.severity === filterBy.severity);
+      bugsToDisplay = bugsToDisplay.filter(
+        (bug) => bug.severity >= filterBy.severity
+      );
     }
+
+    if (filterBy.labels && filterBy.labels.length) {
+      bugsToDisplay = bugsToDisplay.filter((bug) =>
+        bug.labels?.some((label) => filterBy.labels.includes(label))
+      );
+    }
+
+    if (filterBy.sortBy) {
+      bugsToDisplay.sort((a, b) => {
+        if (filterBy.sortDir === -1) {
+          return a[filterBy.sortBy] < b[filterBy.sortBy] ? 1 : -1;
+        } else {
+          return a[filterBy.sortBy] > b[filterBy.sortBy] ? 1 : -1;
+        }
+      });
+    }
+
+    const PAGE_SIZE = 5;
+    const startIdx = filterBy.pageIdx * PAGE_SIZE;
+    bugsToDisplay = bugsToDisplay.slice(startIdx, startIdx + PAGE_SIZE);
 
     return bugsToDisplay;
   } catch (error) {

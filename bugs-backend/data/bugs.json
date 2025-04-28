@@ -1,20 +1,53 @@
 [
     {
-        "_id": "8BPo6a",
-        "title": "New bug",
+        "_id": "u67X5U",
+        "severity": 1,
+        "description": "Screen freezes on small devices"
+    },
+    {
+        "_id": "BvmHAm",
+        "severity": 1,
+        "description": "Screen freezes on small devices"
+    },
+    {
+        "_id": "abc124",
+        "severity": 1,
+        "description": "Screen freezes on small devices"
+    },
+    {
+        "_id": "abc125",
+        "title": "Crash on login",
+        "description": "App crashes after submitting login form",
         "severity": 3,
-        "description": "Test bug",
-        "createdAt": 1745311911057
+        "createdAt": 1542107361000,
+        "labels": [
+            "critical",
+            "auth",
+            "urgent"
+        ]
     },
     {
-        "_id": "AY3QIA",
-        "title": "saved",
-        "severity": 4,
-        "createdAt": 1745150524018
+        "_id": "abc126",
+        "title": "Data not syncing",
+        "description": "Changes made offline aren't synced when reconnecting",
+        "severity": 2,
+        "createdAt": 1542107362000,
+        "labels": [
+            "sync",
+            "offline",
+            "bug"
+        ]
     },
     {
-        "_id": "8q4PP9",
-        "severity": null,
-        "createdAt": 1745147929586
+        "_id": "abc127",
+        "title": "Email not sent",
+        "description": "Confirmation email not sent after registration",
+        "severity": 1,
+        "createdAt": 1542107363000,
+        "labels": [
+            "low",
+            "email",
+            "notification"
+        ]
     }
 ]

@@ -23,16 +23,20 @@ async function query(filterBy = {}) {
     throw err;
   }
 }
+
 async function getById(bugId) {
   console.log(bugId);
   try {
-    const { data: bug } = await axios.get(BASE_URL + bugId);
+    const { data: bug } = await axios.get(BASE_URL + bugId, {
+      withCredentials: true,
+    });
     return bug;
   } catch (err) {
     console.log("err", err);
     throw err;
   }
 }
+
 function remove(bugId) {
   try {
     return axios.delete(BASE_URL + bugId);
@@ -45,7 +49,7 @@ async function save(bug) {
   try {
     const { data: savedBug } = await axios[method](
       BASE_URL + (bug._id || ""),
-      car
+      bug
     );
     return savedBug;
   } catch (err) {
