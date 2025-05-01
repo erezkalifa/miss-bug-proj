@@ -1,89 +1,123 @@
-import { readJsonFile, writeJsonFile, makeId } from "../../services/utils.js";
+import { makeId, readJsonFile, writeJsonFile } from "../../services/utils.js";
 
 export const bugService = {
   query,
   getById,
-  remove,
   save,
+  remove,
 };
+
+const PAGE_SIZE = 3;
 
 const bugs = readJsonFile("./data/bugs.json");
 
-async function query(filterBy) {
-  let bugsToDisplay = bugs;
-
+async function query(filterBy = {}) {
   try {
+    if (!filterBy || !Object.keys(filterBy).length) {
+      return bugs;
+    }
+    let bugsToDisplay = bugs;
     if (filterBy.txt) {
       const regExp = new RegExp(filterBy.txt, "i");
       bugsToDisplay = bugsToDisplay.filter((bug) => regExp.test(bug.title));
     }
-
     if (filterBy.severity) {
+      const severity = +filterBy.severity;
+      if (!isNaN(severity) && severity > 0) {
+        bugsToDisplay = bugsToDisplay.filter((bug) => bug.severity <= severity);
+      }
+    }
+    if (filterBy.labels.length) {
+      const labels = Array.isArray(filterBy.labels)
+        ? filterBy.labels
+        : [filterBy.labels];
       bugsToDisplay = bugsToDisplay.filter(
-        (bug) => bug.severity >= filterBy.severity
+        (bug) =>
+          bug.labels && bug.labels.some((label) => labels.includes(label))
       );
     }
 
-    if (filterBy.labels && filterBy.labels.length) {
-      bugsToDisplay = bugsToDisplay.filter((bug) =>
-        bug.labels?.some((label) => filterBy.labels.includes(label))
-      );
-    }
-
+    // Sorting
     if (filterBy.sortBy) {
+      const sortKey = filterBy.sortBy;
+      const sortDir = +filterBy.sortDir || 1;
       bugsToDisplay.sort((a, b) => {
-        if (filterBy.sortDir === -1) {
-          return a[filterBy.sortBy] < b[filterBy.sortBy] ? 1 : -1;
+        if (typeof a[sortKey] === "string") {
+          return a[sortKey].localeCompare(b[sortKey]) * sortDir;
         } else {
-          return a[filterBy.sortBy] > b[filterBy.sortBy] ? 1 : -1;
+          return (a[sortKey] - b[sortKey]) * sortDir;
         }
       });
     }
 
-    const PAGE_SIZE = 5;
-    const startIdx = filterBy.pageIdx * PAGE_SIZE;
-    bugsToDisplay = bugsToDisplay.slice(startIdx, startIdx + PAGE_SIZE);
-
+    // Paging
+    // const pageIdx = +filterBy.pageIdx || 0
+    // const startIdx = pageIdx * PAGE_SIZE
+    // bugsToDisplay = bugsToDisplay.slice(startIdx, startIdx + PAGE_SIZE)
     return bugsToDisplay;
-  } catch (error) {
-    throw error;
+  } catch (err) {
+    console.log(err);
+    throw err;
   }
 }
 
 async function getById(bugId) {
   try {
-    const bug = bugs.find((bug) => bug._id === bugId);
+    const bug = bugs.find((bug) => bug._id == bugId);
     if (!bug) throw new Error("Cannot find bug");
     return bug;
   } catch (err) {
+    console.log(err);
     throw err;
   }
 }
 
-async function remove(bugId) {
+async function remove(bugId, loggedinUser) {
   try {
     const bugIdx = bugs.findIndex((bug) => bug._id === bugId);
-    if (bugIdx === -1) throw new Error("Cannot find bug");
-    bugs.splice(bugIdx, 1);
+    if (bugIdx === -1) throw new Error("Bug not found"); //bug doesnt exist
+    const bug = bugs[bugIdx];
+    if (!loggedinUser?.isAdmin && bug.creator._id !== loggedinUser._id) {
+      throw "Not your bag";
+    }
+    bugs.splice(bugIdx, 1); //remove the bug
     await saveBugsToFile();
   } catch (err) {
-    console.log("err:", err);
+    console.log(err);
+    throw err;
   }
 }
 
-async function save(bugToSave) {
+async function save(bugToSave, loggedinUser) {
   try {
+    //bug already exist
+    if (!bugToSave.title || !bugToSave.severity || !bugToSave.description) {
+      throw new Error("Missing required fields");
+    }
+    console.log("bugToSave._id is:", bugToSave._id);
+
     if (bugToSave._id) {
       const bugIdx = bugs.findIndex((bug) => bug._id === bugToSave._id);
-      if (bugIdx === -1) throw new Error("Cannot find bug");
+      if (bugIdx === -1) throw new Error("Bug not found");
+      const bug = bugs[bugIdx];
+      if (!loggedinUser?.isAdmin && bug.creator._id !== loggedinUser._id) {
+        throw "Not your car";
+      }
       bugs[bugIdx] = bugToSave;
     } else {
       bugToSave._id = makeId();
+      bugToSave.createdAt = Date.now();
+      bugToSave.creator = {
+        _id: loggedinUser._id,
+        fullname: loggedinUser.fullname,
+      };
+
       bugs.unshift(bugToSave);
     }
     await saveBugsToFile();
     return bugToSave;
   } catch (err) {
+    console.log("bugService.save() crashed:", err);
     throw err;
   }
 }

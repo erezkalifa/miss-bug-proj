@@ -1,14 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { userService } from "../services/user.service.js";
+import { showSuccessMsg, showErrorMsg } from "../services/event-bus.service.js";
 
 export function UserIndex() {
   const [users, setUsers] = useState([]);
-  const [newUser, setNewUser] = useState({
-    fullname: "",
-    username: "",
-    password: "",
-    score: 0,
-  });
 
   useEffect(() => {
     loadUsers();
@@ -16,10 +11,11 @@ export function UserIndex() {
 
   async function loadUsers() {
     try {
-      const users = await userService.query();
+      const users = await userService.getUsers();
+      console.log(users);
       setUsers(users);
     } catch (err) {
-      console.error("Cannot load users", err);
+      console.log("Error loading users", err);
     }
   }
 
@@ -27,70 +23,56 @@ export function UserIndex() {
     try {
       await userService.remove(userId);
       setUsers((prev) => prev.filter((user) => user._id !== userId));
+      showSuccessMsg("User removed");
     } catch (err) {
-      console.error("Cannot remove user", err);
+      console.log("Error from onRemoveUser ->", err);
+      showErrorMsg("Cannot remove user");
     }
   }
 
-  async function onSaveUser() {
+  async function onAddUser() {
+    const user = {
+      fullname: prompt("Full name?"),
+      username: prompt("Username?"),
+      password: prompt("Password?"),
+      score: +prompt("Score?") || 0,
+    };
     try {
-      const savedUser = await userService.save(newUser);
+      const savedUser = await userService.update(user);
       setUsers((prev) => [...prev, savedUser]);
-      setNewUser({ fullname: "", username: "", password: "", score: 0 });
+      showSuccessMsg("User added");
     } catch (err) {
-      console.error("Cannot save user", err);
+      console.log("Error from onAddUser ->", err);
+      showErrorMsg("Cannot add user");
     }
   }
 
-  function handleChange({ target }) {
-    const { name, value } = target;
-    setNewUser((prev) => ({ ...prev, [name]: value }));
+  async function onEditUser(user) {
+    const score = +prompt("New score?", user.score);
+    const userToSave = { ...user, score };
+    try {
+      const savedUser = await userService.update(userToSave);
+      setUsers((prev) =>
+        prev.map((u) => (u._id === savedUser._id ? savedUser : u))
+      );
+      showSuccessMsg("User updated");
+    } catch (err) {
+      console.log("Error from onEditUser ->", err);
+      showErrorMsg("Cannot update user");
+    }
   }
 
   return (
-    <section className="user-index">
-      <h2>Add new user</h2>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          onSaveUser();
-        }}
-      >
-        <input
-          name="fullname"
-          value={newUser.fullname}
-          onChange={handleChange}
-          placeholder="Full name"
-        />
-        <input
-          name="username"
-          value={newUser.username}
-          onChange={handleChange}
-          placeholder="Username"
-        />
-        <input
-          name="password"
-          value={newUser.password}
-          onChange={handleChange}
-          placeholder="Password"
-          type="password"
-        />
-        <input
-          name="score"
-          value={newUser.score}
-          onChange={handleChange}
-          placeholder="Score"
-          type="number"
-        />
-        <button>Save</button>
-      </form>
-      <h1>Users</h1>
-
+    <section>
+      <h2>Users</h2>
+      <button onClick={onAddUser}>Add User</button>
       <ul>
+        {console.log(users)}
         {users.map((user) => (
           <li key={user._id}>
             {user.fullname} ({user.username}) - Score: {user.score}
             <button onClick={() => onRemoveUser(user._id)}>Remove</button>
+            <button onClick={() => onEditUser(user)}>Edit</button>
           </li>
         ))}
       </ul>

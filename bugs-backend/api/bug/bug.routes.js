@@ -1,4 +1,6 @@
 import express from "express";
+import { requireAuth } from "../../middlewares/requireAuth.middleware.js";
+
 import {
   getBugs,
   getBug,

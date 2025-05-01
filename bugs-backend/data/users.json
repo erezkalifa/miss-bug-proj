@@ -1,36 +1,9 @@
 [
-  {
-    "_id": "u101",
-    "fullname": "Muki Ja",
-    "username": "muki",
-    "password": "muki1234",
-    "score": 100
-  },
-  {
-    "_id": "u102",
-    "fullname": "Puki pa",
-    "username": "puki",
-    "password": "puki1234",
-    "score": 13
-  },
-  {
-    "_id": "u103",
-    "fullname": "tuki pa",
-    "username": "tuki",
-    "password": "tuki1234",
-    "score": 27
-  },
-  {
-    "fullname": "erez",
-    "username": "admin",
-    "password": "123",
-    "score": 15,
-    "_id": "yoaQ8N"
-  },
-  {
-    "fullname": "erez",
-    "username": "admin",
-    "score": 15,
-    "_id": "8wH8nZ"
-  }
+    {
+        "username": "kalifa",
+        "password": "$2b$10$HMqepV0MnFwUe8dgo0O0MeoHIid83p7c11ah8TomSHcgIqOkz//..",
+        "fullname": "erez",
+        "_id": "baRhMQ",
+        "score": 0
+    }
 ]

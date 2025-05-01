@@ -1,18 +1,23 @@
 import express from "express";
 import {
-  getUsers,
   getUser,
+  getUsers,
   removeUser,
-  addUser,
   updateUser,
+  addUser,
 } from "./user.controller.js";
+import { log } from "../../middlewares/log.middleware.js";
+import {
+  requireAdmin,
+  requireAuth,
+} from "../../middlewares/requireAuth.middleware.js";
 
 const router = express.Router();
 
 router.get("/", getUsers);
 router.get("/:userId", getUser);
-router.delete("/:userId", removeUser);
-router.post("/", addUser);
 router.put("/:userId", updateUser);
+router.post("/", addUser);
+router.delete("/:userId", requireAdmin, removeUser);
 
 export const userRoutes = router;

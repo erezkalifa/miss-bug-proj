@@ -57,7 +57,6 @@ export async function updateUser(req, res) {
     score,
   };
 
-  console.log(userToSave);
   try {
     const savedUser = userService.save(userToSave);
     res.send(savedUser);

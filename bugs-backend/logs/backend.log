@@ -260,3 +260,306 @@
 28.4.2025, 11:04:09 - INFO - Example app listening on port http://127.0.0.1:3030/
 28.4.2025, 11:05:08 - INFO - Example app listening on port http://127.0.0.1:3030/
 28.4.2025, 11:05:19 - INFO - Example app listening on port http://127.0.0.1:3030/
+28.4.2025, 11:23:25 - INFO - Example app listening on port http://127.0.0.1:3030/
+28.4.2025, 11:23:32 - INFO - Example app listening on port http://127.0.0.1:3030/
+28.4.2025, 11:23:38 - INFO - Example app listening on port http://127.0.0.1:3030/
+28.4.2025, 11:24:42 - INFO - Example app listening on port http://127.0.0.1:3030/
+28.4.2025, 11:24:42 - INFO - Example app listening on port http://127.0.0.1:3030/
+28.4.2025, 11:24:53 - INFO - Example app listening on port http://127.0.0.1:3030/
+28.4.2025, 11:25:34 - INFO - Example app listening on port http://127.0.0.1:3030/
+28.4.2025, 11:25:48 - INFO - Example app listening on port http://127.0.0.1:3030/
+28.4.2025, 11:25:54 - INFO - Example app listening on port http://127.0.0.1:3030/
+28.4.2025, 11:25:58 - INFO - Example app listening on port http://127.0.0.1:3030/
+28.4.2025, 12:51:50 - INFO - Example app listening on port http://127.0.0.1:3030/
+28.4.2025, 12:52:02 - INFO - Example app listening on port http://127.0.0.1:3030/
+28.4.2025, 12:52:30 - INFO - Example app listening on port http://127.0.0.1:3030/
+28.4.2025, 21:55:41 - INFO - Example app listening on port http://127.0.0.1:3030/
+28.4.2025, 21:57:32 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 12:21:53 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 12:33:54 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 12:35:13 - DEBUG - auth.service - signup with username: erez11, fullname: erez1
+29.4.2025, 12:35:13 - ERROR - Failed to signup TypeError: userService.getByUsername is not a function
+29.4.2025, 12:39:22 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 12:39:34 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 12:39:34 - ERROR - Failed to signup TypeError: userService.getByUsername is not a function
+29.4.2025, 12:40:20 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 12:40:27 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 12:40:27 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 12:52:18 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 12:52:32 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 12:53:04 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 12:54:47 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 12:56:11 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 12:56:51 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 12:57:05 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 12:59:43 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 13:04:11 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 13:07:27 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 13:07:27 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 13:07:46 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 13:07:46 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 13:07:46 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 13:07:56 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 13:07:59 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 13:07:59 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 13:08:32 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 13:08:33 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 13:08:33 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 13:08:51 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 13:08:51 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 13:09:13 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 13:09:15 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 13:09:15 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 13:09:32 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 13:09:51 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 13:09:58 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 13:09:58 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 13:10:22 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 13:10:24 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 13:10:24 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 13:10:57 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 13:11:07 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 13:11:09 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 13:11:09 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 13:11:13 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 13:11:13 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 13:11:21 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 13:11:24 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 13:11:24 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 13:11:28 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 13:11:30 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 13:11:30 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 13:11:37 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 13:11:42 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 13:11:42 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 13:11:56 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:13:46 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:13:54 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:14:16 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:14:49 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:14:55 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 14:14:55 - ERROR - Failed to signup Error: data must be a string or Buffer and salt must either be a salt string or a number of rounds
+29.4.2025, 14:16:11 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:16:14 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 14:16:14 - ERROR - Failed to signup Error: data must be a string or Buffer and salt must either be a salt string or a number of rounds
+29.4.2025, 14:16:19 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:16:22 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 14:16:22 - ERROR - Failed to signup Error: data must be a string or Buffer and salt must either be a salt string or a number of rounds
+29.4.2025, 14:16:27 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:16:29 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 14:16:29 - ERROR - Failed to signup Error: data must be a string or Buffer and salt must either be a salt string or a number of rounds
+29.4.2025, 14:17:02 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 14:17:02 - DEBUG - auth.route - new account created: {"username":"erez","password":"$2b$10$pkCo8bNBEyVejt76lawWx.hZewustgGpcy4Pse5fzPcbky8UZXpKy","fullname":"erez","_id":"sLbaNN"}
+29.4.2025, 14:17:02 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 14:17:28 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:18:04 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:18:06 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 14:18:06 - ERROR - Failed to signup Username already taken
+29.4.2025, 14:18:39 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 14:18:39 - ERROR - Failed to signup Username already taken
+29.4.2025, 14:18:53 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:19:03 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 14:19:03 - DEBUG - auth.route - new account created: {"username":"erez","password":"$2b$10$r1Kncy8tWpCf4FuY3WfJh.GYZXWwMoUwG1XfgBMIG48uGku19L2Su","fullname":"erez","_id":"Olv2LM"}
+29.4.2025, 14:19:03 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 14:19:11 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:21:06 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 14:21:06 - ERROR - Failed to signup Username already taken
+29.4.2025, 14:21:16 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:21:20 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 14:21:20 - DEBUG - auth.route - new account created: {"username":"erez","password":"$2b$10$sZF2.cfjsADeEmN13OpqrOHJvXNw6/8KPkCLWaE0YiQY8iwdqifUC","fullname":"erez","_id":"Vyi2Jh"}
+29.4.2025, 14:21:20 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 14:22:42 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:22:48 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 14:22:48 - DEBUG - auth.route - new account created: {"username":"erez","password":"$2b$10$ZyJcrBRGeO3MQ1g9ng/EcODrZxL/3jndtBT0nNUHybICV3Peyid6K","fullname":"erez","_id":"7itAKH"}
+29.4.2025, 14:22:48 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 14:23:34 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:23:52 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 14:23:52 - DEBUG - auth.route - new account created: {"username":"erez","password":"$2b$10$66zdnCC96eILUo5r0jY9kuODU8k/2LV9sW74OQVE0UUNE4IoGKbUK","fullname":"erez","_id":"Md9YzH"}
+29.4.2025, 14:23:52 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 14:24:49 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:24:53 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 14:24:53 - ERROR - Failed to signup Username already taken
+29.4.2025, 14:25:19 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:25:22 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 14:25:22 - DEBUG - auth.route - new account created: {"username":"erez","password":"$2b$10$rpwILJZTA9mu9bvYQU99UuwPG1QFLLeceM96m30rGUBG77Gf0i4oK","fullname":"erez","_id":"3jD3Kx"}
+29.4.2025, 14:25:22 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 14:25:36 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:25:45 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:25:50 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 14:25:50 - DEBUG - auth.route - new account created: {"username":"erez","password":"$2b$10$ZOzvqttcWtHtYdnzOTWIQOz2cyV4OwSEjkHFZyWK2skbi40C3KFkm","fullname":"erez","_id":"vLBNAm"}
+29.4.2025, 14:25:50 - ERROR - Failed to signup Error: Cannot find user
+29.4.2025, 14:25:57 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:26:14 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:26:24 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:26:50 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:27:04 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 14:27:04 - DEBUG - auth.route - new account created: {"username":"erez","password":"$2b$10$CcUziiKTSoBXfHI.yEUcVekHu6fx18zBIR4THaBNbzvE0CwRfJFi.","fullname":"erez","_id":"JgUVfW"}
+29.4.2025, 14:27:04 - INFO - User signup: | {"_id":"JgUVfW","fullname":"erez"}
+29.4.2025, 14:27:12 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 14:32:24 - INFO - User login:  | {"_id":"JgUVfW","fullname":"erez"}
+29.4.2025, 14:32:38 - INFO - User login:  | {"_id":"JgUVfW","fullname":"erez"}
+29.4.2025, 15:09:04 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 16:47:36 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 16:48:44 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 16:48:52 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 16:48:58 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 16:49:14 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 16:49:56 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 16:50:06 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 16:50:37 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 16:51:30 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 16:51:48 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 16:52:53 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 16:57:49 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 16:58:43 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 16:59:11 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 16:59:34 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 16:59:41 - INFO - User login:  | {"_id":"u101","fullname":"Muki Ja"}
+29.4.2025, 17:06:44 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:06:53 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:07:03 - INFO - User login:  | {"_id":"JgUVfW","fullname":"erez"}
+29.4.2025, 17:07:14 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:07:19 - INFO - User login:  | {"_id":"u101","fullname":"Muki Ja"}
+29.4.2025, 17:10:58 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:11:07 - INFO - User login:  | {"_id":"u101","fullname":"Muki Ja"}
+29.4.2025, 17:11:38 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:15:05 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:22:00 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:22:16 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:22:58 - INFO - User login:  | {"_id":"u103","fullname":"tuki pa"}
+29.4.2025, 17:22:58 - ERROR - Failed to Login NaN
+29.4.2025, 17:23:03 - INFO - User login:  | {"_id":"JgUVfW","fullname":"erez"}
+29.4.2025, 17:23:03 - ERROR - Failed to Login NaN
+29.4.2025, 17:23:10 - ERROR - Failed to Login NaN
+29.4.2025, 17:23:10 - INFO - User login:  | {"_id":"u102","fullname":"Puki pa"}
+29.4.2025, 17:23:42 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:23:51 - INFO - User login:  | {"_id":"u101","fullname":"Muki Ja"}
+29.4.2025, 17:24:43 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:29:09 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:29:26 - INFO - User login:  | {"_id":"u101","fullname":"Muki Ja"}
+29.4.2025, 17:29:59 - INFO - User login:  | {"_id":"u101","fullname":"Muki Ja"}
+29.4.2025, 17:31:59 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:32:40 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:32:53 - INFO - User login:  | {"_id":"u101","fullname":"Muki Ja"}
+29.4.2025, 17:33:13 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:33:41 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:33:59 - INFO - User login:  | {"_id":"u101","fullname":"Muki Ja"}
+29.4.2025, 17:41:38 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:42:20 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:43:55 - INFO - User login:  | {"_id":"JgUVfW","fullname":"erez"}
+29.4.2025, 17:44:43 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:44:54 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 17:44:54 - DEBUG - auth.route - new account created: {"username":"erez","password":"$2b$10$NqO3SWiDK58qhljq4o0V0OvhaY9CeCjtoPnelVbjJBqhHN5tHvzmC","fullname":"erez","_id":"qxWT5I"}
+29.4.2025, 17:44:54 - INFO - User signup: | {"_id":"qxWT5I","fullname":"erez"}
+29.4.2025, 17:45:14 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:55:41 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:56:54 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:57:08 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 17:57:08 - ERROR - Failed to signup Username already taken
+29.4.2025, 17:57:33 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:57:38 - DEBUG - auth.service - signup with username: erez, fullname: erez
+29.4.2025, 17:57:38 - INFO - User signup: | {"_id":"tl15T3","fullname":"erez"}
+29.4.2025, 17:57:38 - DEBUG - auth.route - new account created: {"username":"erez","password":"$2b$10$0MhAXDcFx4LVuBRm33fA5eisGkluxRq941fyZXRTZGuyxdHDLmfoq","fullname":"erez","_id":"tl15T3"}
+29.4.2025, 17:58:15 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:58:51 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 17:59:56 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 18:01:07 - ERROR - Couldn't remove bug FHdBx1 | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 18:01:29 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 18:01:35 - ERROR - Couldn't remove bug FHdBx1 | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 18:04:57 - DEBUG - auth.service - signup with username: er, fullname: er
+29.4.2025, 18:04:57 - DEBUG - auth.route - new account created: {"username":"er","password":"$2b$10$bl2rQYPWmOms6PVjZxGx6O/PByD4yWTm5yU/mJxnqWBrz2hmaljh.","fullname":"er","_id":"Mg30f0"}
+29.4.2025, 18:04:57 - INFO - User signup: | {"_id":"Mg30f0","fullname":"er"}
+29.4.2025, 18:06:40 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 18:08:50 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 18:09:01 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 18:10:56 - DEBUG - auth.service - signup with username: שגדכ, fullname: ראר
+29.4.2025, 18:10:56 - DEBUG - auth.route - new account created: {"username":"שגדכ","password":"$2b$10$nfmHqlK9sNH9OUAO0CYroesSea5Rh.IeB7AIGL6KNcSlJvcf757Ve","fullname":"ראר","_id":"k5vA3j","score":0}
+29.4.2025, 18:10:56 - INFO - User signup: | {"_id":"k5vA3j","fullname":"ראר"}
+29.4.2025, 18:12:53 - ERROR - Couldn't save bug | Error: Missing required fields
+29.4.2025, 20:48:16 - DEBUG - auth.service - signup with username: adminov, fullname: admin
+29.4.2025, 20:48:16 - INFO - User signup: | {"_id":"cAe2AC","fullname":"admin"}
+29.4.2025, 20:48:16 - DEBUG - auth.route - new account created: {"username":"adminov","password":"$2b$10$.omZfn2.T30xR8sqrpLsKeKVjMHeqcUKWAJVOOwow2tkw/fSzs0ia","fullname":"admin","_id":"cAe2AC","score":0}
+29.4.2025, 20:48:33 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 20:50:54 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 20:51:13 - ERROR - Couldn't save bug | Error: Missing required fields
+29.4.2025, 20:58:19 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 20:58:27 - ERROR - Couldn't save bug | Error: Missing required fields
+29.4.2025, 21:01:08 - ERROR - Couldn't save bug | Error: Missing required fields
+29.4.2025, 21:01:20 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:02:11 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:02:32 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:02:47 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:03:37 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:03:45 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:04:05 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:04:10 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:04:35 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:04:40 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:05:09 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:05:13 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:05:23 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:05:49 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:05:53 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:07:50 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:07:54 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:08:19 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:09:08 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:09:29 - ERROR - Couldn't save bug | Error: Bug not found
+29.4.2025, 21:10:52 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:11:03 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:11:21 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:11:30 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:12:04 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:12:09 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:12:36 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:12:40 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:13:07 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:13:12 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:15:36 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:15:46 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:16:05 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:16:28 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:16:52 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:16:59 - ERROR - Couldn't save bug | ReferenceError: idx is not defined
+29.4.2025, 21:17:22 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:17:29 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:17:48 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:17:52 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:18:31 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:18:38 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:19:01 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:20:16 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:20:20 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:20:31 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:22:55 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:23:06 - ERROR - Couldn't save bug | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:23:38 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:24:20 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:24:27 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:26:57 - DEBUG - auth.service - signup with username: kalifa, fullname: erez
+29.4.2025, 21:26:57 - DEBUG - auth.route - new account created: {"username":"kalifa","password":"$2b$10$Yt4SK4VCrf2aElaYNRASi.m2QfgrG2TIjWgKNRjTx2bG.ekyJ2GLq","fullname":"erez","_id":"Go9PGZ","score":0}
+29.4.2025, 21:26:57 - INFO - User signup: | {"_id":"Go9PGZ","fullname":"erez"}
+29.4.2025, 21:27:39 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:28:59 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:29:15 - DEBUG - auth.service - signup with username: kalifa, fullname: erez
+29.4.2025, 21:29:15 - DEBUG - auth.route - new account created: {"username":"kalifa","password":"$2b$10$HMqepV0MnFwUe8dgo0O0MeoHIid83p7c11ah8TomSHcgIqOkz//..","fullname":"erez","_id":"baRhMQ","score":0}
+29.4.2025, 21:29:15 - INFO - User signup: | {"_id":"baRhMQ","fullname":"erez"}
+29.4.2025, 21:31:05 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:31:58 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:31:59 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:32:07 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:32:16 - INFO - User login:  | {"_id":"baRhMQ","fullname":"erez"}
+29.4.2025, 21:32:22 - ERROR - Couldn't remove bug YYOvoC | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:32:55 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:33:33 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:33:37 - ERROR - Couldn't remove bug YYOvoC | TypeError: Cannot read properties of undefined (reading '_id')
+29.4.2025, 21:33:52 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:33:56 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:34:25 - INFO - Example app listening on port http://127.0.0.1:3030/
+29.4.2025, 21:34:59 - INFO - Example app listening on port http://127.0.0.1:3030/
+1.5.2025, 11:33:27 - ERROR - Couldn't remove bug abc127 | TypeError: Cannot read properties of undefined (reading '_id')
+1.5.2025, 11:33:28 - ERROR - Couldn't remove bug abc127 | TypeError: Cannot read properties of undefined (reading '_id')
+1.5.2025, 11:33:34 - ERROR - Couldn't remove bug u67X5U | TypeError: Cannot read properties of undefined (reading '_id')
+1.5.2025, 11:33:43 - ERROR - Couldn't remove bug vvlCxL | ReferenceError: err is not defined
+1.5.2025, 11:33:44 - ERROR - Couldn't remove bug vvlCxL | ReferenceError: err is not defined
+1.5.2025, 11:41:11 - INFO - Example app listening on port http://127.0.0.1:3030/

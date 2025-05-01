@@ -2,8 +2,6 @@ import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import { loggerService } from "./services/logger.service.js";
-import { bugService } from "./api/bug/bug.service.js";
-import { userService } from "./services/user.service.js";
 
 const app = express();
 
@@ -18,12 +16,19 @@ app.use(cookieParser());
 app.use(express.json());
 
 import { bugRoutes } from "./api/bug/bug.routes.js";
-app.use("/api/bug", bugRoutes);
-
 import { userRoutes } from "./api/user/user.routes.js";
-app.use("/api/user", userRoutes);
+import { authRoutes } from "./api/auth/auth.routes.js";
 
-const port = 3030;
+app.use("/api/bug", bugRoutes);
+app.use("/api/user", userRoutes);
+app.use("/api/auth", authRoutes);
+
+app.get("/all-cookies", (req, res) => {
+  console.log("All cookies:", req.cookies);
+  res.json(req.cookies);
+});
+
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  loggerService.info(`Example app listening on port http://127.0.0.1:${port}/`);
+  console.log(`App listening on port ${port}!`);
 });
